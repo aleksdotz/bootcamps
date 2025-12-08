@@ -1,0 +1,79 @@
+body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222}
+img{display:block;max-width:100%}
+
+/* vaste containers */
+.container{
+    width:1000px;
+    margin:0 auto}
+
+/* sticky header */
+.site-header{
+    position:sticky;
+    top:0;
+    background:#fff;
+    border-bottom:1px solid #ddd}
+.site-header .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 0}
+.brand{
+    font-size:20px;
+    margin:0}
+.nav a{
+    margin-left:12px;
+    text-decoration:none;
+    color:#555}
+.nav a:hover{
+    color:#000}
+
+/* hero */
+.hero{
+    background:#333 url('https://picsum.photos/id/1003/1600/600') center/cover no-repeat;
+    color:#fff}
+.hero .container{
+    padding:80px 0}
+.hero h2{
+    margin:0 0 10px;
+    font-size:40px}
+.hero p{
+    margin:0 0 12px}
+.btn{
+    display:inline-block;
+    border:2px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    padding:8px 12px}
+
+/* sections */
+section{
+    padding:30px 0}
+
+/* gallery: eenvoudige rij-afbreking */
+.gallery-basic{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px}
+.gallery-basic img{
+    width:322px;
+    height:214px;
+    object-fit:cover;
+    filter:grayscale(100%)}
+
+/* testimonials: simpele kolommen */
+.testi-row{
+    display:flex;
+    gap:16px}
+.testi{
+    flex:1;
+    border:1px solid #eee;
+    padding:12px;
+    text-align:center}
+.testi img{
+    border-radius:50%}
+
+/* footer */
+.site-footer{
+    border-top:1px solid #ddd;
+    padding:12px 0;
+    text-align:left}

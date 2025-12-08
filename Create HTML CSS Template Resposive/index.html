@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S2 Template (Basic)</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+      
+      menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('nav-open');
+        menuToggle.classList.toggle('active');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">S2 TEMPLATE</h1>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#testimonials">testimonials</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to our website</h2>
+        <p>Dit is een super basic HTML/CSS pagina met een sticky header.</p>
+        <a class="btn" href="#about">THIS IS A CALL TO ACTION!</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h3>Something about us!</h3>
+        <p>
+          Eenvoudige uitlegtekst.Deze website is super gaaf een cool.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h3>Gallery</h3>
+        <div class="gallery-basic">
+          <img src="https://picsum.photos/id/1015/300/200" alt="img1">
+          <img src="https://picsum.photos/id/1027/300/200" alt="img2">
+          <img src="https://picsum.photos/id/1035/300/200" alt="img3">
+          <img src="https://picsum.photos/id/1040/300/200" alt="img4">
+          <img src="https://picsum.photos/id/1043/300/200" alt="img5">
+          <img src="https://picsum.photos/id/1056/300/200" alt="img6">
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <h3>Testimonials</h3>
+        <div class="testi-row">
+          <div class="testi">
+            <img src="https://picsum.photos/id/64/80/80" alt="klant1">
+            <p>"Wat een fijne samenwerking!"</p>
+            <small>John Doe</small>
+          </div>
+          <div class="testi">
+            <img src="https://picsum.photos/id/65/80/80" alt="klant2">
+            <p>"Onze site werkt weer simpel en snel."</p>
+            <small>Rosa Pie</small>
+          </div>
+          <div class="testi">
+            <img src="https://picsum.photos/id/66/80/80" alt="klant3">
+            <p>"Aanrader voor basic projecten."</p>
+            <small>Philip Burns</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Contacteren kan niet want daar heb ik geen zin in.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made with <span>❤</span></small>
+    </div>
+  </footer>
+</body>
+</html>
