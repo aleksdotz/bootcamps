@@ -1,0 +1,83 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body    {
+    display:flex;
+    justify-content:center;
+}
+
+section {
+    min-height:100vh;
+    max-width:1000px;
+    border-left:1px solid gray;
+    border-right:1px solid gray;
+    padding:50px;
+}
+
+h1 {
+    width:50%;
+}
+
+#projectgrid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+#projectgrid>div{ /* little arrow in the selector to only select the direct children: Google CSS Diner */
+    border-radius:20px;
+  
+    z-index:1;
+    overflow:hidden;
+}
+
+/* Startwaarde voor woorden die infaden in de fadetext-sectie */
+section#fadetext span{
+    opacity:0.2;
+    transition:opacity 150ms ease;
+}
+
+
+#projectgrid>div:nth-child(1){ /* Pseudo selector. Google CSS Diner */
+    --rotation:5deg;
+    --scale:0.75;
+    --position-x:466px;
+    --position-y:-974px; 
+    transform:translate(var(--position-x),var(--position-y)) scale(var(--scale)) rotate(var(--rotation));
+    
+}
+#projectgrid>div:nth-child(2){
+    --rotation:-5deg;
+    --scale:0.7;
+    --position-x:0px;
+    --position-y:-974px;
+    transform:translate(var(--position-x),var(--position-y)) scale(var(--scale)) rotate(var(--rotation));
+}
+#projectgrid>div:nth-child(3){    
+    --rotation:7deg;
+    --scale:0.68;
+    --position-x:445px;
+    --position-y:-1274px;
+    transform:translate(var(--position-x),var(--position-y)) scale(var(--scale)) rotate(var(--rotation));
+}
+#projectgrid>div:nth-child(4){    
+    --rotation:3deg;
+    --scale:0.67;
+    --position-x:0px;
+    --position-y:-1274px;
+    transform:translate(var(--position-x),var(--position-y)) scale(var(--scale)) rotate(var(--rotation));
+}
+
+#projectgrid img {
+    display:block;
+    width:100%;
+    height:auto;
+}
